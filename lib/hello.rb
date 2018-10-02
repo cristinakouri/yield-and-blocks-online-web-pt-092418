@@ -2,10 +2,8 @@ require 'pry'
 
 def hello_t(array)
   if block_given? 
-    array.each do |item|
-     # binding.pry 
-      yield(item)
-    end
+    array.each {|item|
+      yield(item)}
   else 
     puts "Hey! No block was given!"
   end
