@@ -2,8 +2,9 @@ require 'pry'
 
 def hello_t(array)
   array.each do |item|
-     yield(array)
      binding.pry 
+     yield(array)
+     
   end
 end
 
