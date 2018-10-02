@@ -1,12 +1,7 @@
 require 'pry' 
 
 def hello_t(array)
-  if block_given? 
-    array.each {|item|
-      yield(item)}
-  else 
-    puts "Hey! No block was given!"
-  end
+  block_given? ? array.each {|item| yield(item)} : puts "Hey! No block was given!" 
 end
 
 # call your method here!
