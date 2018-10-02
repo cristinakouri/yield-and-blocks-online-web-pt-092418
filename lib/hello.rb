@@ -3,7 +3,7 @@ require 'pry'
 def hello_t(array)
   array.each do |item|
      binding.pry 
-     yield(array)
+     yield(item)
      
   end
 end
